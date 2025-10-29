@@ -12,6 +12,9 @@
 
 set -e
 
+# Version
+VERSION="1.0.1"
+
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -25,12 +28,13 @@ DRY_RUN=false
 MAILCOW_PATH=""
 
 show_help() {
-   echo "Mailcow Message Size Limit Updater"
+   echo "Cowbell Limiter v${VERSION} - Mailcow Message Size Limit Updater"
    echo ""
    echo "Usage: sudo $0 [OPTIONS] [mailcow_path]"
    echo ""
    echo "Options:"
    echo "  --dry-run    Show what would be changed without making any modifications"
+   echo "  --version    Show version information"
    echo "  --help       Show this help message"
    echo ""
    echo "Examples:"
@@ -46,6 +50,10 @@ for arg in "$@"; do
       --dry-run)
          DRY_RUN=true
          shift
+         ;;
+      --version)
+         echo "Cowbell Limiter v${VERSION}"
+         exit 0
          ;;
       --help)
          show_help
