@@ -79,7 +79,7 @@ sudo ./set_message_size.sh --help
 === Mailcow Message Size Limit Updater ===
 
 Detecting Mailcow installation...
-✓ Found Mailcow installation: /home/tba/docker/mailcow
+✓ Found Mailcow installation: /home/username/docker/mailcow
 
 === Current Configuration ===
 
@@ -96,7 +96,7 @@ Enter desired message size limit in MB (e.g., 50, 80, 100): 80
 
 === Planned Changes ===
 
-  Mailcow Directory: /home/tba/docker/mailcow
+  Mailcow Directory: /home/username/docker/mailcow
   New Size: 80 MB (83886080 bytes)
   ClamAV MaxScanSize: 160M
 
@@ -111,7 +111,7 @@ ClamAV MaxFileSize:              50M → 80M
 
 Apply these settings? (y/n): y
 
-Creating backups in: /home/tba/docker/mailcow/config_backups/20250129_143022/
+Creating backups in: /home/username/docker/mailcow/config_backups/20250129_143022/
   ✓ Backed up: extra.cf
   ✓ Backed up: master.cf
   ✓ Backed up: options.inc
@@ -142,7 +142,7 @@ ClamAV MaxScanSize: 160M
 ClamAV MaxFileSize: 80M
 
 ✓ Configuration updated successfully!
-Backups saved in: /home/tba/docker/mailcow/config_backups/20250129_143022/
+Backups saved in: /home/username/docker/mailcow/config_backups/20250129_143022/
 
 Message size limit is now: 80 MB
 
@@ -160,15 +160,15 @@ A 80MB limit allows for ~60MB of actual attachments.
 === Dry Run Summary ===
 
 Files that would be modified:
-  ✓ /home/tba/docker/mailcow/data/conf/postfix/extra.cf
-  ✓ /home/tba/docker/mailcow/data/conf/postfix/master.cf
-  ✓ /home/tba/docker/mailcow/data/conf/rspamd/local.d/options.inc
-  ✓ /home/tba/docker/mailcow/data/conf/rspamd/local.d/antivirus.conf
-  ✓ /home/tba/docker/mailcow/data/conf/rspamd/local.d/external_services.conf
-  ✓ /home/tba/docker/mailcow/data/conf/clamav/clamd.conf
+  ✓ /home/username/docker/mailcow/data/conf/postfix/extra.cf
+  ✓ /home/username/docker/mailcow/data/conf/postfix/master.cf
+  ✓ /home/username/docker/mailcow/data/conf/rspamd/local.d/options.inc
+  ✓ /home/username/docker/mailcow/data/conf/rspamd/local.d/antivirus.conf
+  ✓ /home/username/docker/mailcow/data/conf/rspamd/local.d/external_services.conf
+  ✓ /home/username/docker/mailcow/data/conf/clamav/clamd.conf
 
 Backups would be created in:
-  /home/tba/docker/mailcow/config_backups/20250129_143530/
+  /home/username/docker/mailcow/config_backups/20250129_143530/
 
 Containers that would be restarted:
   - postfix-mailcow
@@ -178,7 +178,7 @@ Containers that would be restarted:
 === Dry Run Complete ===
 
 No changes were made. To apply these settings, run:
-  sudo ./set_message_size.sh /home/tba/docker/mailcow
+  sudo ./set_message_size.sh /home/username/docker/mailcow
 ```
 
 ## 🔧 What Gets Updated
@@ -295,4 +295,4 @@ This script modifies your Mailcow configuration. Always:
 
 ---
 
-**Need more cowbell?** 🔔 [Open an issue](https://github.com/YOUR_USERNAME/cowbell-limiter/issues) or submit a PR!
+**Need more cowbell?** 🔔 [Open an issue](https://github.com/Wlanium/cowbell-limiter/issues) or submit a PR!
